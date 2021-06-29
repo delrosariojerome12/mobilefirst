@@ -1,0 +1,110 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+:root {
+  --shadow: 0.5rem 1rem 2rem #333;
+  --bg: #333;
+  --gray-bg: #ddd;
+  --main-bg: #fff;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
+  background-color: var(--gray-bg);
+  font-size: 1.5rem;
+}
+main {
+  background: var(--main-bg);
+  max-width: 90rem;
+  margin: auto;
+  box-shadow: var(--shadow);
+}
+main img {
+  width: 100%;
+}
+.landing {
+  height: 100vh;
+  background: var(--main-bg);
+}
+.landing-text {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.landing-text h1,
+h2 {
+  margin-bottom: 1rem;
+}
+
+.landing-text .btn {
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+  border: 1px solid #ccc;
+  padding: 1rem 2rem;
+  border-radius: 5rem;
+  margin: 1rem;
+  transition: all 0.2s ease-in-out;
+  font-weight: 500;
+}
+.landing-text .btn:hover {
+  background: var(--bg);
+  color: #ddd;
+}
+.landing .landing-img {
+  background: url("https://source.unsplash.com/De8wMYoSSBc");
+  height: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+header {
+  background: var(--bg);
+  color: var(--main-bg);
+  padding: 2rem;
+  text-align: center;
+}
+header h2 {
+  border-left: solid 1px #eee;
+  border-right: solid 1px #eee;
+  display: inline-block;
+  padding: 0 2rem;
+}
+.caption {
+  padding: 2rem;
+  text-align: center;
+}
+p {
+  text-align: center;
+  padding: 0 2rem 2rem 2rem;
+}
+footer {
+  background: var(--bg);
+  color: var(--main-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+/*  */
+@media screen and (min-width: 700px) {
+  .landing {
+    display: flex;
+  }
+  .landing-text {
+    width: 50%;
+    height: 100%;
+  }
+  .landing .landing-img {
+    width: 50%;
+    height: 100%;
+  }
+}
